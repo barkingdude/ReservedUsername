@@ -1,0 +1,40 @@
+{
+  "name": "reserved-usernames-nodejs",
+  "version": "1.0.0",
+  "description": "A comprehensive Node.js library for handling reserved usernames to prevent URL collisions",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "examples": "node index.js",
+    "update-cache": "node -e \"const {ReservedUsernames} = require('./index.js'); const ru = new ReservedUsernames({autoUpdate: true}); ru.on('ready', () => console.log('Cache updated'));\"",
+    "clear-cache": "node -e \"const {ReservedUsernames} = require('./index.js'); const ru = new ReservedUsernames(); console.log('Cache cleared:', ru.clearCache());\""
+  },
+  "keywords": [
+    "reserved",
+    "usernames",
+    "validation",
+    "security",
+    "url",
+    "collision",
+    "prevention"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "joi": "^17.9.2"
+  },
+  "devDependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/reserved-usernames-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/reserved-usernames-nodejs/issues"
+  },
+  "homepage": "https://github.com/yourusername/reserved-usernames-nodejs#readme"
+}
